@@ -1,8 +1,12 @@
 /* 
 
+Using selections as from tW talk
 root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL_mu_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "")'
-
 root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL_el_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "")'
+
+Using selections as from ttH leptons module
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL_mu_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL_el_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "")'
 
 */
 
@@ -76,7 +80,11 @@ void trainLeptonID_UL(TString folder,
       dataloader->AddVariable("Muon_dz  := log(abs(Muon_dz))",  'D'); // longitudinal impact parameter wrt PV
       dataloader->AddVariable("Muon_segmentComp",               'D'); // segment compatibility
       lepton += "Muon_miniPFRelIso_all < 0.4 && Muon_sip3d < 8";
-      lepton += "Muon_pt > 10 && abs(Muon_eta) < 2.4 && (Muon_isGlobal == 1 || Muon_isTracker == 1) && Muon_isPFcand == 1 && abs(Muon_dxy) < 0.05 && abs(Muon_dz) < 0.1 && Muon_mediumId == 1";
+      // From tW talk
+      // lepton += "Muon_pt > 10 && abs(Muon_eta) < 2.4 && (Muon_isGlobal == 1 || Muon_isTracker == 1) && Muon_isPFcand == 1 && abs(Muon_dxy) < 0.05 && abs(Muon_dz) < 0.1 && Muon_mediumId == 1";
+      // From https://github.com/sscruz/cmgtools-lite/blob/104X_dev_nano/TTHAnalysis/python/tools/nanoAOD/ttH_modules.py
+      lepton += "abs(Muon_eta) < 2.4 && Muon_pt > 5 && Muon_miniPFRelIso_all < 0.4 && Muon_sip3d < 8 && abs(Muon_dxy) < 0.05 && abs(Muon_dz) < 0.1"; // line 18
+      lepton += "Muon_looseId == 1"; // line 97
     }
     else if (name.Contains("_el")) {
       dataloader->AddVariable("Electron_pt",                            'D'); // pt
@@ -93,7 +101,11 @@ void trainLeptonID_UL(TString folder,
       dataloader->AddVariable("Electron_dz  := log(abs(Electron_dz))",  'D'); // longitudinal impact parameter wrt PV
       dataloader->AddVariable("Electron_mvaFall17V2noIso",              'D'); // electron MVA ID value
       lepton += "Electron_miniPFRelIso_all < 0.4 && Electron_sip3d < 8";
-      lepton += "Electron_pt > 10 && abs(Electron_eta) < 2.5 && Electron_lostHits < 2 && abs(Electron_dxy) < 0.05 && abs(Electron_dz) < 0.1";
+      // From tW talk
+      // lepton += "Electron_pt > 10 && abs(Electron_eta) < 2.5 && Electron_lostHits < 2 && abs(Electron_dxy) < 0.05 && abs(Electron_dz) < 0.1";
+      // From https://github.com/sscruz/cmgtools-lite/blob/104X_dev_nano/TTHAnalysis/python/tools/nanoAOD/ttH_modules.py
+      lepton += "abs(Electron_eta) < 2.4 && Electron_pt > 5 && Electron_miniPFRelIso_all < 0.4 && Electron_sip3d < 8 && abs(Electron_dxy) < 0.05 && abs(Electron_dz) < 0.1 && Electron_mvaFall17V2noIso_WPL == 1"; // line 19
+      lepton += "Electron_lostHits <= 1"; // line 97
     }
     else { 
       std::cerr << "ERROR: must either be electron or muon." << std::endl; 

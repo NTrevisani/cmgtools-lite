@@ -2,11 +2,15 @@
 
 Macro originally put together by Pietro Vischia.
 To cope with changes in TMVA (factory and dataloader) some functions were
-updated, according to: // From: https://github.com/root-project/root/blob/master/tmva/tmvagui/
+updated, according to: https://github.com/root-project/root/blob/master/tmva/tmvagui/
 
-
+For training done following tW talk:
 root -l -b -q 'plotAll.C("training_nanoAOD", "UL_mu_default_2016", "plots_UL_mu_2016")'
 root -l -b -q 'plotAll.C("training_nanoAOD", "UL_el_default_2016", "plots_UL_el_2016")'
+
+For training done following ttH selections:
+root -l -b -q 'plotAll.C("training_nanoAOD", "UL_mu_TTH-like_2016", "plots_UL_mu_TTH-like_2016")'
+root -l -b -q 'plotAll.C("training_nanoAOD", "UL_el_TTH-like_2016", "plots_UL_el_TTH-like_2016")'
 
 */
 
@@ -1179,6 +1183,8 @@ void plotAll(TString input_folder  = "",
   // Create output directory
   TString mkdir = "mkdir -p " + output_dir;
   gSystem -> Exec(mkdir);
+  TString copy_cmd = "cp /afs/cern.ch/user/n/ntrevisa/public/utils/index.php " + output_dir;
+  gSystem -> Exec(copy_cmd);
 
   vector<TString> inputs;
   inputs.push_back(input_folder);
