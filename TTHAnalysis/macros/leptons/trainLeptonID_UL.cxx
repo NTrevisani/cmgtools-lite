@@ -1,12 +1,37 @@
 /* 
 
-Using selections as from tW talk
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL_mu_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "")'
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL_el_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "")'
+/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root
 
-Using selections as from ttH leptons module
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL_mu_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "")'
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL_el_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016.root", "")'
+## Using selections as from tW talk
+
+---------------
+--   Muons   --
+---------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_mu_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+---------------
+-- Electrons --
+---------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+---------------------------------------
+-- Alternative electron gen-matching --
+---------------------------------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+
+
+## Using selections as from ttH leptons module
+
+---------------
+--   Muons   --
+---------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_mu_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+---------------
+-- Electrons --
+---------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+---------------------------------------
+-- Alternative electron gen-matching --
+---------------------------------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
 
 */
 
@@ -66,9 +91,15 @@ void trainLeptonID_UL(TString folder,
     
   if (name.Contains("UL")) {
     if (name.Contains("_mu")) {
+      // Spectators
+      dataloader->AddSpectator("Muon_mvaTTH",                   'D');
+      dataloader->AddSpectator("Muon_miniPFRelIso_all",         'D'); // relative isolation
+      dataloader->AddSpectator("Muon_looseId",                  'D');
+      dataloader->AddSpectator("Muon_genPartFlav",              'D');
+      // Training variables
       dataloader->AddVariable("Muon_pt",                        'D'); // pt
       dataloader->AddVariable("Muon_eta",                       'D'); // eta
-      dataloader->AddVariable("Muon_pfRelIso03_all",            'D'); // relative isolation
+      dataloader->AddVariable("Muon_pfRelIso03_all",            'D'); // PF relative isolation
       dataloader->AddVariable("Muon_miniPFRelIso_chg",          'D'); // mini relative isolation - charged component
       dataloader->AddVariable("Muon_miniRelIsoNeutral := Muon_miniPFRelIso_all - Muon_miniPFRelIso_chg", 'D'); // mini relative isolation - neutral component
       dataloader->AddVariable("Muon_jetNDauCharged",            'D'); // number of charged daughters of the closest jet
@@ -81,15 +112,26 @@ void trainLeptonID_UL(TString folder,
       dataloader->AddVariable("Muon_segmentComp",               'D'); // segment compatibility
       lepton += "Muon_miniPFRelIso_all < 0.4 && Muon_sip3d < 8";
       // From tW talk
-      // lepton += "Muon_pt > 10 && abs(Muon_eta) < 2.4 && (Muon_isGlobal == 1 || Muon_isTracker == 1) && Muon_isPFcand == 1 && abs(Muon_dxy) < 0.05 && abs(Muon_dz) < 0.1 && Muon_mediumId == 1";
-      // From https://github.com/sscruz/cmgtools-lite/blob/104X_dev_nano/TTHAnalysis/python/tools/nanoAOD/ttH_modules.py
-      lepton += "abs(Muon_eta) < 2.4 && Muon_pt > 5 && Muon_miniPFRelIso_all < 0.4 && Muon_sip3d < 8 && abs(Muon_dxy) < 0.05 && abs(Muon_dz) < 0.1"; // line 18
-      lepton += "Muon_looseId == 1"; // line 97
+      if (name.Contains("default")){
+	lepton += "Muon_pt > 10 && abs(Muon_eta) < 2.4 && (Muon_isGlobal == 1 || Muon_isTracker == 1) && Muon_isPFcand == 1 && abs(Muon_dxy) < 0.05 && abs(Muon_dz) < 0.1 && Muon_mediumId == 1";
+      }
+      else if (name.Contains("TTH-like")){
+	// From https://github.com/sscruz/cmgtools-lite/blob/104X_dev_nano/TTHAnalysis/python/tools/nanoAOD/ttH_modules.py
+	lepton += "abs(Muon_eta) < 2.4 && Muon_pt > 5 && Muon_miniPFRelIso_all < 0.4 && Muon_sip3d < 8 && abs(Muon_dxy) < 0.05 && abs(Muon_dz) < 0.1"; // line 18
+	lepton += "Muon_looseId == 1"; // line 97
+      }
     }
     else if (name.Contains("_el")) {
+      // Spectators
+      dataloader->AddSpectator("Electron_mvaTTH",                       'D');
+      dataloader->AddSpectator("Electron_miniPFRelIso_all",             'D'); // relative isolation
+      dataloader->AddSpectator("Electron_mvaFall17V2noIso_WPL",         'D');
+      dataloader->AddSpectator("Electron_lostHits",                     'D');
+      dataloader->AddSpectator("Electron_genPartFlav",                  'D');
+      // Training variables
       dataloader->AddVariable("Electron_pt",                            'D'); // pt
       dataloader->AddVariable("Electron_eta",                           'D'); // eta
-      dataloader->AddVariable("Electron_pfRelIso03_all",                'D'); // relative isolation
+      dataloader->AddVariable("Electron_pfRelIso03_all",                'D'); // PF relative isolation
       dataloader->AddVariable("Electron_miniPFRelIso_chg",              'D'); // mini relative isolation - charged component
       dataloader->AddVariable("Electron_miniRelIsoNeutral := Electron_miniPFRelIso_all - Electron_miniPFRelIso_chg", 'D'); // mini relative isolation - neutral component
       dataloader->AddVariable("Electron_jetNDauCharged",                'D'); // number of charged daughters of the closest jet
@@ -102,10 +144,14 @@ void trainLeptonID_UL(TString folder,
       dataloader->AddVariable("Electron_mvaFall17V2noIso",              'D'); // electron MVA ID value
       lepton += "Electron_miniPFRelIso_all < 0.4 && Electron_sip3d < 8";
       // From tW talk
-      // lepton += "Electron_pt > 10 && abs(Electron_eta) < 2.5 && Electron_lostHits < 2 && abs(Electron_dxy) < 0.05 && abs(Electron_dz) < 0.1";
-      // From https://github.com/sscruz/cmgtools-lite/blob/104X_dev_nano/TTHAnalysis/python/tools/nanoAOD/ttH_modules.py
-      lepton += "abs(Electron_eta) < 2.4 && Electron_pt > 5 && Electron_miniPFRelIso_all < 0.4 && Electron_sip3d < 8 && abs(Electron_dxy) < 0.05 && abs(Electron_dz) < 0.1 && Electron_mvaFall17V2noIso_WPL == 1"; // line 19
-      lepton += "Electron_lostHits <= 1"; // line 97
+      if (name.Contains("default")){
+	lepton += "Electron_pt > 10 && abs(Electron_eta) < 2.5 && Electron_lostHits < 2 && abs(Electron_dxy) < 0.05 && abs(Electron_dz) < 0.1";
+      }
+      else if (name.Contains("TTH-like")){
+	// From https://github.com/sscruz/cmgtools-lite/blob/104X_dev_nano/TTHAnalysis/python/tools/nanoAOD/ttH_modules.py
+	lepton += "abs(Electron_eta) < 2.5 && Electron_pt > 5 && Electron_miniPFRelIso_all < 0.4 && Electron_sip3d < 8 && abs(Electron_dxy) < 0.05 && abs(Electron_dz) < 0.1 && Electron_mvaFall17V2noIso_WPL == 1"; // line 19
+	lepton += "Electron_lostHits <= 1"; // line 97
+      }
     }
     else { 
       std::cerr << "ERROR: must either be electron or muon." << std::endl; 
@@ -174,10 +220,26 @@ void trainLeptonID_UL(TString folder,
   //  if (!doMultiClass)
 
   // Flavour of genParticle for MC matching (for signal and bkg)
-  if (name.Contains("_mu"))
-    dataloader->PrepareTrainingAndTestTree(lepton+" Muon_genPartFlav == 1", lepton+" Muon_genPartFlav != 1", "" );
-  else if (name.Contains("_el"))
-    dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlav == 1", lepton+" Electron_genPartFlav != 1", "" );
+  if (name.Contains("_mu"))   
+    dataloader->PrepareTrainingAndTestTree(lepton+" Muon_genPartFlav == 1 || Muon_genPartFlav == 15", lepton+" Muon_genPartFlav != 1 && Muon_genPartFlav != 15", "");
+  else if (name.Contains("_el")){
+    if (name.Contains("Alt")){
+      if (name.Contains("Alt2"))
+	// Alt2 --> matching with gen particles before FSR  
+	dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlavAlt2 == 1 || Electron_genPartFlavAlt2 == 15", lepton+" Electron_genPartFlavAlt2 != 1 && Electron_genPartFlavAlt2 != 15", "");
+      else if (name.Contains("Alt3"))
+	// Alt3 --> matching with electrons or photons with status 1 or 23 -- USE THIS ONE!
+	dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlavAlt3 == 1 || Electron_genPartFlavAlt3 == 15", lepton+" Electron_genPartFlavAlt3 != 1 && Electron_genPartFlavAlt3 != 15", "");
+      else if (name.Contains("Alt4"))
+	// Alt4 --> matching with electrons with status 1 or 23  
+	dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlavAlt4 == 1 || Electron_genPartFlavAlt4 == 15", lepton+" Electron_genPartFlavAlt4 != 1 && Electron_genPartFlavAlt4 != 15", "");
+      else // Just "Alt" in name
+	// Alt --> dressed lepton matching  
+	dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlavAlt == 1 || Electron_genPartFlavAlt == 15", lepton+" Electron_genPartFlavAlt != 1 && Electron_genPartFlavAlt != 15", "");
+    }
+    else // Standard nanoAOD matching
+      dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlav == 1 || Electron_genPartFlav == 15", lepton+" Electron_genPartFlav != 1 && Electron_genPartFlav != 15", "");
+  }
   else{
     std::cerr << "ERROR: must either be electron or muon." << std::endl; 
     return;
@@ -190,16 +252,19 @@ void trainLeptonID_UL(TString folder,
     
   // Boosted Decision Trees with gradient boosting
   //TString BDTGopt = "!H:!V:NTrees=500:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=2000:nEventsMin=100:NNodesMax=9:UseNvars=9:MaxDepth=8";
-  TString BDTGopt = "!H:!V:NTrees=500:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=2000:UseNvars=9:MaxDepth=8";
+
+  // TString BDTGopt  = "!H:!V:NTrees=500:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=2000:UseNvars=9:MaxDepth=8";
+  TString BDTGopt2 = "!H:!V:NTrees=1000:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=1000:UseNvars=9:MaxDepth=4:MinNodeSize=0.05";
 
   // alternative options
   //TString BDTGopt = "!H:!V:NTrees=1000:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=2000:nEventsMin=100:MaxDepth=3";
   //TString BDTGopt = "!H:!V:NTrees=1000:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=2000";
     
 
-  if (!doMultiClass) 
-    BDTGopt += ":CreateMVAPdfs"; // Create Rarity distribution
-  factory->BookMethod(dataloader, TMVA::Types::kBDT, "BDTG", BDTGopt);
+  // if (!doMultiClass) 
+    //BDTGopt += ":CreateMVAPdfs"; // Create Rarity distribution
+  // factory->BookMethod(dataloader, TMVA::Types::kBDT, "BDTG", BDTGopt);
+  factory->BookMethod(dataloader, TMVA::Types::kBDT, "BDTG2", BDTGopt2);
   
   factory->TrainAllMethods();
   factory->TestAllMethods();
