@@ -17,6 +17,10 @@ root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016", 
 ---------------------------------------
 root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
 
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt2", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt4", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+
 
 ## Using selections as from ttH leptons module
 
@@ -32,6 +36,10 @@ root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016",
 -- Alternative electron gen-matching --
 ---------------------------------------
 root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt2", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt4", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
 
 */
 
@@ -96,6 +104,13 @@ void trainLeptonID_UL(TString folder,
       dataloader->AddSpectator("Muon_miniPFRelIso_all",         'D'); // relative isolation
       dataloader->AddSpectator("Muon_looseId",                  'D');
       dataloader->AddSpectator("Muon_genPartFlav",              'D');
+      dataloader->AddSpectator("Muon_isGlobal",                 'D');
+      dataloader->AddSpectator("Muon_isTracker",                'D');
+      dataloader->AddSpectator("Muon_isPFcand",                 'D');
+      dataloader->AddSpectator("Muon_mediumId",                 'D');
+      dataloader->AddSpectator("Muon_looseId",                  'D');
+      dataloader->AddSpectator("Muon_dxy",                      'D');
+      dataloader->AddSpectator("Muon_dz",                       'D');
       // Training variables
       dataloader->AddVariable("Muon_pt",                        'D'); // pt
       dataloader->AddVariable("Muon_eta",                       'D'); // eta
@@ -105,11 +120,11 @@ void trainLeptonID_UL(TString folder,
       dataloader->AddVariable("Muon_jetNDauCharged",            'D'); // number of charged daughters of the closest jet
       dataloader->AddVariable("Muon_jetPtRelv2",                'D'); // relative momentum of the lepton with respect to the closest jet after subtracting the lepton
       dataloader->AddVariable("Muon_jetPtRatio := min(1 / (1 + Muon_jetRelIso), 1.5)", 'D'); // ratio between the lepton and the closest jet pTs (1+(PFIsoAll04/pt) if no matching jet)
-      dataloader->AddVariable("Muon_jetBTagDeepFlavB := Muon_jetIdx > -1 ? Jet_btagDeepFlavB[Muon_jetIdx] : 0", 'D'); // closest jet b-tagging probability 
-      dataloader->AddVariable("Muon_sip3d",                     'D'); // 3D impact parameter significance wrt first PV
-      dataloader->AddVariable("Muon_dxy := log(abs(Muon_dxy))", 'D'); // transverse impact parameter wrt PV
-      dataloader->AddVariable("Muon_dz  := log(abs(Muon_dz))",  'D'); // longitudinal impact parameter wrt PV
-      dataloader->AddVariable("Muon_segmentComp",               'D'); // segment compatibility
+      dataloader->AddVariable("Muon_jetBTagDeepFlavB := Muon_jetIdx > -1 ? Jet_btagDeepFlavB[Muon_jetIdx] : 0", 'D'); // Jet b-tagging probability of the associated jet 
+      dataloader->AddVariable("Muon_sip3d",                         'D'); // 3D impact parameter significance wrt first PV
+      dataloader->AddVariable("Muon_log_dxy := log(abs(Muon_dxy))", 'D'); // transverse impact parameter wrt PV
+      dataloader->AddVariable("Muon_log_dz  := log(abs(Muon_dz))",  'D'); // longitudinal impact parameter wrt PV
+      dataloader->AddVariable("Muon_segmentComp",                   'D'); // segment compatibility
       lepton += "Muon_miniPFRelIso_all < 0.4 && Muon_sip3d < 8";
       // From tW talk
       if (name.Contains("default")){
@@ -128,6 +143,12 @@ void trainLeptonID_UL(TString folder,
       dataloader->AddSpectator("Electron_mvaFall17V2noIso_WPL",         'D');
       dataloader->AddSpectator("Electron_lostHits",                     'D');
       dataloader->AddSpectator("Electron_genPartFlav",                  'D');
+      dataloader->AddSpectator("Electron_genPartFlavAlt",               'D');
+      dataloader->AddSpectator("Electron_genPartFlavAlt2",              'D');
+      dataloader->AddSpectator("Electron_genPartFlavAlt3",              'D');
+      dataloader->AddSpectator("Electron_genPartFlavAlt4",              'D');
+      dataloader->AddSpectator("Electron_dxy",                          'D');
+      dataloader->AddSpectator("Electron_dz",                           'D');
       // Training variables
       dataloader->AddVariable("Electron_pt",                            'D'); // pt
       dataloader->AddVariable("Electron_eta",                           'D'); // eta
@@ -138,10 +159,10 @@ void trainLeptonID_UL(TString folder,
       dataloader->AddVariable("Electron_jetPtRelv2",                    'D'); // relative momentum of the lepton with respect to the closest jet after subtracting the lepton
       dataloader->AddVariable("Electron_jetPtRatio := min(1 / (1 + Electron_jetRelIso), 1.5)", 'D'); // ratio between the lepton and the closest jet pTs (1+(PFIsoAll04/pt) if no matching jet)
       dataloader->AddVariable("Electron_jetBTagDeepFlavB := Electron_jetIdx > -1 ? Jet_btagDeepFlavB[Electron_jetIdx] : 0", 'D'); // closest jet b-tagging probability 
-      dataloader->AddVariable("Electron_sip3d",                         'D'); // 3D impact parameter significance wrt first PV
-      dataloader->AddVariable("Electron_dxy := log(abs(Electron_dxy))", 'D'); // transverse impact parameter wrt PV
-      dataloader->AddVariable("Electron_dz  := log(abs(Electron_dz))",  'D'); // longitudinal impact parameter wrt PV
-      dataloader->AddVariable("Electron_mvaFall17V2noIso",              'D'); // electron MVA ID value
+      dataloader->AddVariable("Electron_sip3d",                             'D'); // 3D impact parameter significance wrt first PV
+      dataloader->AddVariable("Electron_log_dxy := log(abs(Electron_dxy))", 'D'); // transverse impact parameter wrt PV
+      dataloader->AddVariable("Electron_log_dz  := log(abs(Electron_dz))",  'D'); // longitudinal impact parameter wrt PV
+      dataloader->AddVariable("Electron_mvaFall17V2noIso",                  'D'); // electron MVA ID value
       lepton += "Electron_miniPFRelIso_all < 0.4 && Electron_sip3d < 8";
       // From tW talk
       if (name.Contains("default")){
@@ -253,7 +274,7 @@ void trainLeptonID_UL(TString folder,
   // Boosted Decision Trees with gradient boosting
   //TString BDTGopt = "!H:!V:NTrees=500:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=2000:nEventsMin=100:NNodesMax=9:UseNvars=9:MaxDepth=8";
 
-  // TString BDTGopt  = "!H:!V:NTrees=500:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=2000:UseNvars=9:MaxDepth=8";
+  TString BDTGopt  = "!H:!V:NTrees=500:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=2000:UseNvars=9:MaxDepth=8";
   TString BDTGopt2 = "!H:!V:NTrees=1000:BoostType=Grad:Shrinkage=0.10:!UseBaggedGrad:nCuts=1000:UseNvars=9:MaxDepth=4:MinNodeSize=0.05";
 
   // alternative options
@@ -262,9 +283,9 @@ void trainLeptonID_UL(TString folder,
     
 
   // if (!doMultiClass) 
-    //BDTGopt += ":CreateMVAPdfs"; // Create Rarity distribution
-  // factory->BookMethod(dataloader, TMVA::Types::kBDT, "BDTG", BDTGopt);
-  factory->BookMethod(dataloader, TMVA::Types::kBDT, "BDTG2", BDTGopt2);
+  BDTGopt += ":CreateMVAPdfs"; // Create Rarity distribution
+  factory->BookMethod(dataloader, TMVA::Types::kBDT, "BDTG", BDTGopt);
+  // factory->BookMethod(dataloader, TMVA::Types::kBDT, "BDTG2", BDTGopt2);
   
   factory->TrainAllMethods();
   factory->TestAllMethods();
