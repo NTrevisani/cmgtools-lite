@@ -243,14 +243,14 @@ void my_tmva_reader_mu(){
 
     // Fill signal histograms
     if (genPartFlav == 1 || genPartFlav == 15){
-      h_sig_ttW    -> Fill(BDTG_ttW);
+      h_sig_ttW    -> Fill((-1)*(mediumId == 0) + (mediumId == 1)*BDTG_ttW);
       h_sig_ttH    -> Fill(BDTG_ttH);
       h_sig_legacy -> Fill(mvaTTH);   
     }
 
     // Fill background histograms
     if (genPartFlav != 1 && genPartFlav != 15){
-      h_bkg_ttW    -> Fill(BDTG_ttW);
+      h_bkg_ttW    -> Fill((-1)*(mediumId == 0) + (mediumId == 1)*BDTG_ttW);
       h_bkg_ttH    -> Fill(BDTG_ttH);
       h_bkg_legacy -> Fill(mvaTTH);  
     }
@@ -283,8 +283,10 @@ void my_tmva_reader_mu(){
 
   TCanvas* c2 = new TCanvas("c2", "c2", 600, 600);
   c2 -> cd();
+  c2 -> SetLogx();
   ROC_ttW.SetTitle("ROC Curve for Muon MVA");
-  ROC_ttW.GetYaxis()->SetRangeUser(0.9, 1.0);
+  ROC_ttW.GetXaxis()->SetRangeUser(0.90, 1.0);
+  ROC_ttW.GetYaxis()->SetRangeUser(0.50, 1.0);
   ROC_ttW.GetXaxis()->SetTitle("Background Rejection");
   ROC_ttW.GetYaxis()->SetTitle("Signal Efficiency");
   ROC_ttW.Draw("APL");
@@ -558,7 +560,7 @@ void my_tmva_reader_el(){
   c2 -> SetLogx();
   ROC_ttW.SetTitle("ROC Curve for Electron MVA");
   ROC_ttW.GetXaxis()->SetRangeUser(0.95, 1.0);
-  ROC_ttW.GetXaxis()->SetNdivisions(100, 100, 100);
+  ROC_ttW.GetXaxis()->SetNdivisions(100, 200, 400);
   ROC_ttW.GetYaxis()->SetRangeUser(0.50, 1.0);
   ROC_ttW.GetXaxis()->SetTitle("Background Rejection");
   ROC_ttW.GetYaxis()->SetTitle("Signal Efficiency");
@@ -576,7 +578,7 @@ void my_tmva_reader_el(){
 
 void my_tmva_reader(){
   
-  //my_tmva_reader_mu();
-  my_tmva_reader_el();
+  my_tmva_reader_mu();
+  // my_tmva_reader_el();
 
 }
