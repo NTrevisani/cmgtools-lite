@@ -1,25 +1,26 @@
 /* 
 
-/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root
+Latest directory with Alternatie Matching:
+/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/
+
+----------
+-- 2016 --
+----------
 
 ## Using selections as from tW talk
 
 ---------------
 --   Muons   --
 ---------------
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_mu_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_mu_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "2016")'
 ---------------
 -- Electrons --
 ---------------
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "2016")'
 ---------------------------------------
 -- Alternative electron gen-matching --
 ---------------------------------------
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
-
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt2", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt4", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "2016")'
 
 
 ## Using selections as from ttH leptons module
@@ -27,19 +28,44 @@ root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_ma
 ---------------
 --   Muons   --
 ---------------
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_mu_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_mu_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "2016")'
 ---------------
 -- Electrons --
 ---------------
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "2016")'
 ---------------------------------------
 -- Alternative electron gen-matching --
 ---------------------------------------
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20_part2/", "", "2016")'
 
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt2", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
-root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt4", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_UL20.root/0A18E677-F3C5-1446-9C46-B499FE4B7A7B_Skim.root", "")'
+
+--------------
+-- 2016_VFP --
+--------------
+
+## Using selections as from tW talk
+
+---------------
+--   Muons   --
+---------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_mu_default_2016_VFP", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "2016_VFP")'
+---------------
+-- Electrons --
+---------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_VFP", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "2016_VFP")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_default_2016_VFP_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "2016_VFP")'
+
+## Using selections as from ttH leptons module
+
+---------------
+--   Muons   --
+---------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_mu_TTH-like_2016_VFP", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "2016_VFP")'
+---------------
+-- Electrons --
+---------------
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_VFP", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "2016_VFP")'
+root -l -b -q 'trainLeptonID_UL.cxx("training_nanoAOD", "UL20_el_TTH-like_2016_VFP_matchingAlt3", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "/eos/user/n/ntrevisa/ttH/leptonMVA/rootFiles/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_2016_VFP_UL20/", "", "2016_VFP")'
 
 */
 
@@ -51,6 +77,7 @@ void trainLeptonID_UL(TString folder,
 		      TString sig2file, 
 		      TString bkg1file, 
 		      TString bkg2file, 
+		      TString year,
 		      bool    doMultiClass    = false, 
 		      TString file_for_sigW_1 = "", 
 		      TString file_for_sigW_2 = "", 
@@ -62,26 +89,50 @@ void trainLeptonID_UL(TString folder,
 		      double  int2b = 0) {
   
   
-  TFile *_f_s1 = TFile::Open(sig1file.Data(), "read");
-  TFile *_f_s2 = (sig2file == "") ? NULL : TFile::Open(sig2file.Data(), "read");
-  TFile *_f_b1 = TFile::Open(bkg1file.Data(), "read");
-  TFile *_f_b2 = (bkg2file == "") ? NULL : TFile::Open(bkg2file.Data(), "read");
- 
-  TTree *dSig1 = (TTree*) _f_s1->Get("Events");
-  TTree *dSig2 = (_f_s2) ? ((TTree*) _f_s2->Get("Events")) : NULL;
+  std::vector<TString> files_names_strings;
 
-  if (file_for_sigW_1 != "") 
-    dSig1->AddFriend("wtree", file_for_sigW_1.Data());
-  if (file_for_sigW_2 != "") 
-    dSig2->AddFriend("wtree", file_for_sigW_2.Data());
+  if (year == "2016"){
+    files_names_strings.push_back("09EA2721-660A-0F49-80CC-E8AB8E038BFA_Skim.root");
+    files_names_strings.push_back("3432CF59-5280-054C-82EC-01132DD8E196_Skim.root");
+    files_names_strings.push_back("3A50DB1B-526E-F84B-B423-C25886D8B9E2_Skim.root");
+    files_names_strings.push_back("45F2F0C0-8DA3-494D-B4F9-F0CA15746068_Skim.root");
+    files_names_strings.push_back("51452850-C2FF-0640-815B-4F11464A5750_Skim.root");
+    files_names_strings.push_back("529F2EDE-2C63-A846-A6F0-7804D4E4AFF9_Skim.root");
+    files_names_strings.push_back("5C750601-4EDC-6F46-9B2A-D3B60F4BE9DF_Skim.root");
+    files_names_strings.push_back("5F5FBB5C-170A-5E4E-A370-4EA224E273F3_Skim.root");
+    files_names_strings.push_back("6546823D-A1FF-ED4F-BD37-17BA3BB84942_Skim.root");
+    files_names_strings.push_back("67CECA18-E87E-524C-B356-EC9151A056AD_Skim.root");
+    files_names_strings.push_back("861F48B6-DCE9-0D47-8A67-0FB0CCCF4337_Skim.root");
+    files_names_strings.push_back("9255B0C9-7BE4-304C-9EBC-5416E9C6196E_Skim.root");
+    files_names_strings.push_back("98F148C6-FD40-6A4C-A704-5E3398A792C6_Skim.root");
+    files_names_strings.push_back("DC985944-2EBF-5344-A1D7-AA5B26156DAD_Skim.root");
+    files_names_strings.push_back("E42CF18F-07E9-E444-AB5E-A5D3DAA83425_Skim.root");
+    files_names_strings.push_back("E5EABD17-62DC-3746-A9C4-1F0FFA7606EB_Skim.root");
+  }
+  else if (year == "2016_VFP"){
+    files_names_strings.push_back("293A49D5-E719-7C42-9EA0-82DCC0370101_Skim.root");
+    files_names_strings.push_back("2E471CD5-EB2E-C34A-A520-295D8C8D2724_Skim.root");
+    files_names_strings.push_back("5856A3BC-B4E7-6549-8619-56F0D4556DFE_Skim.root");
+    // files_names_strings.push_back("5EADD416-E3D5-7E49-866C-B3D50B7C4D98_Skim.root");
+    files_names_strings.push_back("7D1A92EC-C079-C24A-9F1D-796B96A5D168_Skim.root");
+    files_names_strings.push_back("9D0F5653-79E6-8745-A43F-13A3DF09DD54_Skim.root");
+    files_names_strings.push_back("A4659DA6-FE45-524A-BF9C-800BE082FCD7_Skim.root");
+    files_names_strings.push_back("A5B1B5C6-E28B-9D42-96EB-A82D64C67186_Skim.root");
+    files_names_strings.push_back("C0E66DF4-622B-404B-A6AF-8F5A57D30C54_Skim.root");
+    files_names_strings.push_back("C737A51F-00A9-2E4A-90C6-13715F8BEA8D_Skim.root");
+    files_names_strings.push_back("DD1CC8F8-D09D-5149-82C2-07F2776CF378_Skim.root");
+    files_names_strings.push_back("E6F97EA6-EE6A-CA47-9116-E465AD9E8E2A_Skim.root");
+    files_names_strings.push_back("EC87D37D-E22E-1545-B9D8-B4D00AFA0CB0_Skim.root");
+    files_names_strings.push_back("EE4D1744-7A21-B94E-9387-203F249E3180_Skim.root");
+    files_names_strings.push_back("F34167E6-D611-4A4A-8D7E-6FBACA1CC4A7_Skim.root");
+  }
 
-  TTree *dBg1 = (TTree*) _f_b1->Get("Events");
-  TTree *dBg2 = (_f_b2) ? ((TTree*) _f_b2->Get("Events")) : NULL;
-
-  if (file_for_bkgW_1!="") 
-    dBg1->AddFriend("wtree",file_for_bkgW_1.Data());
-  if (file_for_bkgW_2!="") 
-    dBg2->AddFriend("wtree",file_for_bkgW_2.Data());
+  TChain *dSig1 = new TChain("Events");
+  TChain *dBg1  = new TChain("Events");
+  for (int i = 0; i < files_names_strings.size(); ++i){
+    dSig1 -> AddFile(sig1file + files_names_strings.at(i));
+    dBg1  -> AddFile(bkg1file + files_names_strings.at(i));
+  }
   
   TString mkdir = "mkdir -p " + folder;
   gSystem -> Exec(mkdir);
@@ -256,7 +307,7 @@ void trainLeptonID_UL(TString folder,
 	dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlavAlt4 == 1 || Electron_genPartFlavAlt4 == 15", lepton+" Electron_genPartFlavAlt4 != 1 && Electron_genPartFlavAlt4 != 15", "");
       else // Just "Alt" in name
 	// Alt --> dressed lepton matching  
-	dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlavAlt == 1 || Electron_genPartFlavAlt == 15", lepton+" Electron_genPartFlavAlt != 1 && Electron_genPartFlavAlt != 15", "");
+     	dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlavAlt == 1 || Electron_genPartFlavAlt == 15", lepton+" Electron_genPartFlavAlt != 1 && Electron_genPartFlavAlt != 15", "");
     }
     else // Standard nanoAOD matching
       dataloader->PrepareTrainingAndTestTree(lepton+" Electron_genPartFlav == 1 || Electron_genPartFlav == 15", lepton+" Electron_genPartFlav != 1 && Electron_genPartFlav != 15", "");

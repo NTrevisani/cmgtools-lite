@@ -4,7 +4,10 @@ Macro originally put together by Pietro Vischia.
 To cope with changes in TMVA (factory and dataloader) some functions were
 updated, according to: https://github.com/root-project/root/blob/master/tmva/tmvagui/
 
-Using UL20 samples:
+----------
+-- 2016 --
+----------
+
 root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_el_default_2016_matchingAlt3", "plots_UL20_el_default_2016_matchingAlt3")'
 root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_el_TTH-like_2016_matchingAlt3", "plots_UL20_el_TTH-like_2016_matchingAlt3")'
 
@@ -14,16 +17,18 @@ root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_el_TTH-like_2016", "plots_UL2
 root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_mu_default_2016", "plots_UL20_mu_default_2016")'
 root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_mu_TTH-like_2016", "plots_UL20_mu_TTH-like_2016")'
 
+--------------
+-- 2016_VFP --
+--------------
 
-####################################### OLD #######################################
+root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_el_default_2016_VFP_matchingAlt3", "plots_UL20_el_default_2016_VFP_matchingAlt3")'
+root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_el_TTH-like_2016_VFP_matchingAlt3", "plots_UL20_el_TTH-like_2016_VFP_matchingAlt3")'
 
-For training done following tW talk:
-root -l -b -q 'plotAll.C("training_nanoAOD", "UL_mu_default_2016", "plots_UL_mu_2016")'
-root -l -b -q 'plotAll.C("training_nanoAOD", "UL_el_default_2016", "plots_UL_el_2016")'
+root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_el_default_2016_VFP", "plots_UL20_el_default_2016_VFP")'
+root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_el_TTH-like_2016_VFP", "plots_UL20_el_TTH-like_2016_VFP")'
 
-For training done following ttH selections:
-root -l -b -q 'plotAll.C("training_nanoAOD", "UL_mu_TTH-like_2016", "plots_UL_mu_TTH-like_2016")'
-root -l -b -q 'plotAll.C("training_nanoAOD", "UL_el_TTH-like_2016", "plots_UL_el_TTH-like_2016")'
+root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_mu_default_2016_VFP", "plots_UL20_mu_default_2016_VFP")'
+root -l -b -q 'plotAll.C("training_nanoAOD", "UL20_mu_TTH-like_2016_VFP", "plots_UL20_mu_TTH-like_2016_VFP")'
 
 */
 
